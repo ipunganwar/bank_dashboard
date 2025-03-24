@@ -2,6 +2,7 @@ import { formatAmount } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Copy from "./Copy";
 
 const BankCard = ({
   account,
@@ -55,6 +56,7 @@ const BankCard = ({
       </Link>
 
       {/* COPY CARD NUMBER */}
+      {showBalance && <Copy title={account?.shareableId} />}
     </div>
   );
 };
