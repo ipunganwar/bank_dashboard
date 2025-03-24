@@ -1,6 +1,6 @@
 import React from "react";
 
-const Headerbox = ({
+const HeaderBox = ({
   type = "title",
   title,
   user,
@@ -19,4 +19,4 @@ const Headerbox = ({
   );
 };
 
-export default Headerbox;
+export default HeaderBox;

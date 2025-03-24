@@ -1,4 +1,4 @@
-import Headerbox from "@/components/Headerbox";
+import HeaderBox from "@/components/Headerbox";
 import RecentTransactions from "@/components/RecentTransactions";
 import RightSidebar from "@/components/RightSidebar";
 import TotalBalanceBox from "@/components/TotalBalanceBox";
@@ -21,7 +21,7 @@ const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
     <section className="home">
       <div className="home-content">
         <header className="home-header">
-          <Headerbox
+          <HeaderBox
             type="greeting"
             title="Welcome"
             user={loggedIn?.firstName || "Guest"}
