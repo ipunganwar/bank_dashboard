@@ -60,10 +60,7 @@ const AuthForm = ({ type }: { type: string }) => {
           password: data?.password,
         });
 
-        console.log(response);
-
         if (response) {
-          console.log("masuk sini nih");
           router?.push("/");
         }
       }
